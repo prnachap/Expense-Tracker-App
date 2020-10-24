@@ -1,0 +1,41 @@
+// initial resets
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+//   hide scroll bar
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-gray;
+  color: $color-black;
+}
+
+.container {
+  padding: 2rem;
+  width: 40rem;
+  height: 60rem;
+  background: $color-white;
+  position: relative;
+}
+// media query
+@media screen and (max-width: 40rem) {
+  .container {
+    width: 30rem;
+    padding: 2rem;
+  }
+}

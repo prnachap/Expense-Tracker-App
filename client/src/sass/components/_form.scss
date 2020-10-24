@@ -1,0 +1,109 @@
+// form
+.form {
+  position: absolute;
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Noto Sans JP", sans-serif;
+  box-sizing: border-box;
+
+  &__login {
+    height: 50rem;
+  }
+
+  &__header {
+    margin: 1rem 0rem;
+  }
+
+  &__group {
+    margin-bottom: 0.5rem;
+  }
+
+  &__label {
+    display: block;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: $color-gray-medium;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+  }
+  &__input {
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    font-family: "Noto Sans JP", sans-serif;
+    color: black;
+    font-weight: 400;
+    border-radius: 0.3rem;
+    border: 0.15rem solid $color-gray;
+
+    &:active,
+    &:focus {
+      border: 0.15rem solid $color-purple;
+    }
+  }
+
+  // highlighting errors with red borders
+  .error {
+    border: 0.15rem solid $color-red;
+  }
+
+  //   for forget password and signup links
+  &__routing {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    &__link {
+      text-decoration: none;
+      font-weight: 400;
+      color: $color-gray-medium;
+      transition: all 0.3s;
+
+      @media screen and (max-width: 30rem) {
+        font-size: 1.3rem;
+      }
+
+      &:hover {
+        color: $color-purple;
+      }
+    }
+  }
+}
+.input::placeholder {
+  font-weight: 400;
+}
+
+// button
+.btn {
+  cursor: pointer;
+  font-family: "Noto Sans JP", sans-serif;
+  margin-top: 0.6rem;
+  padding: 1rem 1.5rem;
+  background: $color-purple;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  color: $color-white;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  box-shadow: 0px 12px 60px 2px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+
+  &:hover {
+    filter: brightness(80%);
+  }
+
+  &:active {
+    transform: translateY(0.3rem);
+    box-shadow: 0px 6px 30px 1px rgba(0, 0, 0, 0.1);
+  }
+
+  &-light {
+    background: #96a1aa;
+  }
+}

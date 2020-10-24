@@ -1,0 +1,13 @@
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: ($color-white-light);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: modalAnimation 0.3s ease-in backwards;
+}

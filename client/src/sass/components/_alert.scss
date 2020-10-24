@@ -1,0 +1,19 @@
+// alert component
+.alert {
+  border: 0.1rem solid $color-black;
+  border-radius: 0.3rem;
+  padding: 1rem;
+  margin-bottom: 0.4rem;
+  & p {
+    font-size: 1.3rem;
+    color: $color-white-light;
+  }
+}
+
+.danger {
+  background: rgb(238, 112, 112);
+}
+
+.success {
+  background: rgb(81, 172, 81);
+}

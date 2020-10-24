@@ -1,0 +1,110 @@
+// expense list container
+.expense__container {
+  display: flex;
+  padding-top: 1.3rem;
+  align-items: flex-start;
+}
+
+// icon wrapper
+.icon__wrapper {
+  margin-right: 1rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background: linear-gradient(to right bottom, #ffcd30, #ffaf45);
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+// background colors for the icons based on catergory selected
+
+.food {
+  background: linear-gradient(to right bottom, #feb369 20%, #fea261);
+}
+
+.shop {
+  background: linear-gradient(to right bottom, #08f6d3 20%, #02f7b9);
+}
+
+.bills {
+  background: linear-gradient(to right bottom, #225bf9 20%, #29b7e7);
+}
+
+.home {
+  background: linear-gradient(to right bottom, #661eee 20%, #681cf2);
+}
+
+.others {
+  background: linear-gradient(
+    to right bottom,
+    rgb(67, 196, 99) 20%,
+    rgb(27, 124, 51)
+  );
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+
+// items
+.item {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: $border;
+
+  &__info {
+    margin-bottom: 1rem;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-bottom: 0.2rem;
+  }
+  &__date {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: $color-gray;
+  }
+  &__price {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}
+
+// item price wrapper
+.item__price__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.icon__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3rem;
+}
+
+.edit__icons {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #d0d5df;
+  transition: color 0.3s;
+  &:hover {
+    color: $color-orange-dark;
+  }
+}
+
+.expense {
+  color: red;
+}
+
+.income {
+  color: rgb(135, 212, 18);
+}

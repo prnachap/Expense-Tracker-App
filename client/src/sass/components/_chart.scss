@@ -1,0 +1,12 @@
+// chart navigation
+.chart__navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+// chart
+.chart {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto 0 auto;
+}

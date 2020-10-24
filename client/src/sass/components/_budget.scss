@@ -1,0 +1,32 @@
+// budget component
+.budget__wrapper {
+  margin-top: 2rem;
+  padding-bottom: 3rem;
+  border-bottom: $border;
+
+  &__edit {
+    color: rgba(#bcc3d1, 0.7);
+    cursor: pointer;
+
+    &:hover {
+      color: $color-orange-dark;
+    }
+  }
+}
+
+// progress bar
+.progress__wrapper {
+  margin-top: 2rem;
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 4rem;
+  background: rgba($color-gray, 0.5);
+
+  &__bar {
+    max-width: 100%;
+    width: 0%;
+    height: 100%;
+    border-radius: 4rem;
+    background: linear-gradient(to right, #05acef 40%, #4b86e2 60%, #786fd6);
+  }
+}

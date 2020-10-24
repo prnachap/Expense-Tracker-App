@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
+
+// body typography
+body {
+  font-family: "Oxygen", sans-serif;
+  font-size: $default-font-size;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.heading__primary {
+  font-size: 3rem;
+}
+
+.heading__secondary {
+  font-size: 2rem;
+}
+
+.heading__tertiary {
+  font-size: 1.75rem;
+  font-weight: 600;
+
+  &--blue {
+    color: $color-blue;
+  }
+  &--gray {
+    color: rgba($color-gray, 0.7);
+  }
+}
+
+// form fonts
+.form__input {
+  font-family: "Noto Sans JP", sans-serif;
+  color: black;
+  font-weight: 400;
+}
